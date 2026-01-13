@@ -18,7 +18,7 @@ group = pluginGroup
 version = pluginVersion
 description = pluginDescription
 
-val javaVersion = (project.findProperty("java_version") as String? ?: "25").toInt()
+val javaVersion = (project.findProperty("java_version") as String? ?: "21").toInt()
 
 repositories {
     mavenLocal()

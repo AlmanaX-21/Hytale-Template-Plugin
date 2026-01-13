@@ -1,19 +1,19 @@
 # Hytale Template Plugin
 
-![Java Version](https://img.shields.io/badge/Java-25-orange)
+![Java Version](https://img.shields.io/badge/Java-21-orange)
 ![Gradle](https://img.shields.io/badge/Gradle-8.14-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289da?logo=discord&logoColor=white)](https://discord.gg/qm6rvYEXkX)
 [![Documentation](https://img.shields.io/badge/Docs-Modding%20Documentation-blue?logo=read-the-docs&logoColor=white)](https://almanax-21.github.io/Hytale-documentation.github.io/)
 
-A clean, modern template for creating **Hytale Server Plugins** using **Java 25** and **Gradle (Kotlin DSL)**.  
+A clean, modern template for creating **Hytale Server Plugins** using **Java 21** and **Gradle (Kotlin DSL)**.  
 Designed to get you up and running in seconds with pre-configured build tasks, shadow jar support, and VS Code integration.
 
 ---
 
 ## 🚀 Features
 
-- **☕ Java 25 Ready**: Pre-configured toolchain support. Gradle will automatically download JDK 25 if you don't have it.
+- **☕ Java 21 Ready**: Pre-configured toolchain support. Gradle will automatically download JDK 21 if you don't have it.
 - **🐘 Gradle Kotlin DSL**: Modern build scripts (`build.gradle.kts`) for better type safety and IDE autocompletion.
 - **📦 Shadow Jar**: Automatically bundles dependencies (like Gson) to prevent runtime conflicts.
 - **💻 VS Code Support**: Includes `.vscode/tasks.json` for one-click building.
