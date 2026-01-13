@@ -4,6 +4,7 @@
 ![Gradle](https://img.shields.io/badge/Gradle-8.14-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289da?logo=discord&logoColor=white)](https://discord.gg/qm6rvYEXkX)
+[![Documentation](https://img.shields.io/badge/Docs-Modding%20Documentation-blue?logo=read-the-docs&logoColor=white)](https://almanax-21.github.io/Hytale-documentation.github.io/)
 
 A clean, modern template for creating **Hytale Server Plugins** using **Java 25** and **Gradle (Kotlin DSL)**.  
 Designed to get you up and running in seconds with pre-configured build tasks, shadow jar support, and VS Code integration.
