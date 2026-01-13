@@ -1,0 +1,14 @@
+{
+  "Group": "com.example",
+  "Name": "HytaleTemplatePlugin",
+  "Version": "1.0.0",
+  "Description": "A basic Hytale plugin template",
+  "Authors": [
+    {
+      "Name": "AuthorName"
+    }
+  ],
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "Main": "com.example.basicplugin.BasicPlugin"
+}
