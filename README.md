@@ -30,7 +30,7 @@ Designed to get you up and running in seconds with pre-configured build tasks, s
 
 1.  **Clone or Download** this repository.
     ```bash
-    git clone https://github.com/yourusername/BasicHytalePlugin.git
+    https://github.com/AlmanaX-21/Hytale-Template-Plugin.git
     ```
 2.  Open the project in your preferred IDE (IntelliJ IDEA or VS Code recommended).
 
