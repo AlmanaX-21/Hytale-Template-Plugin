@@ -94,8 +94,10 @@ tasks {
     
     // Task to copy the JAR to the server plugins directory
     val copyJar by registering(Copy::class) {
+        val targetDir = file("$serverDir/mods")
+        onlyIf { serverDir != "<serverDir>" && targetDir.parentFile.exists() }
         from(shadowJar)
-        into("$serverDir/mods")
+        into(targetDir)
     }
 
     // Make build depend on shadowJar and run copyJar afterwards
