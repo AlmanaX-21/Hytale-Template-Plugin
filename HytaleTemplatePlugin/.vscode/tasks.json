@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Plugin",
+            "type": "shell",
+            "command": "./gradlew build",
+            "windows": {
+                "command": ".\\gradlew.bat build"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/HytaleTemplatePlugin"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Copy Jar",
+            "type": "shell",
+            "command": "./gradlew copyJar",
+            "windows": {
+                "command": ".\\gradlew.bat copyJar"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/BasicHytalePlugin"
+            },
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}

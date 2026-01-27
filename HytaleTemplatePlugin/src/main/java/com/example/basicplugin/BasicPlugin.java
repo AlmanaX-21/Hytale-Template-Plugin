@@ -29,8 +29,8 @@ public class BasicPlugin extends JavaPlugin {
     @Override
     protected void setup() {
         super.setup();
-        logger.at(Level.INFO).log("=============================");
-        logger.at(Level.INFO).log("BasicPlugin has been enabled!");
-        logger.at(Level.INFO).log("=============================");
+        logger.atInfo().log("=============================");
+        logger.atInfo().log("BasicPlugin has been enabled!");
+        logger.atInfo().log("=============================");
     }
 }

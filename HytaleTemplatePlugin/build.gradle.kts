@@ -5,7 +5,6 @@
 plugins {
     id("java-library")
     id("com.gradleup.shadow") version "9.3.1"
-    // id("run-hytale") // Commented out as likely not resolved without extra config
 }
 
 val pluginGroup: String by project
@@ -18,11 +17,18 @@ group = pluginGroup
 version = pluginVersion
 description = pluginDescription
 
-val javaVersion = (project.findProperty("java_version") as String? ?: "21").toInt()
+val javaVersion = 21
 
 repositories {
-    mavenLocal()
     mavenCentral()
+    maven {
+        name = "hytale-release"
+        url = uri("https://maven.hytale.com/release")
+    }
+    maven {
+        name = "hytale-pre-release"
+        url = uri("https://maven.hytale.com/pre-release")
+    }
 }
 
 sourceSets {
@@ -33,8 +39,8 @@ sourceSets {
 }
 
 dependencies {
-    // Hytale Server API (provided by server at runtime)
-    compileOnly(files("$serverDir/HytaleServer.jar"))
+    // Hytale Server API
+    compileOnly("com.hypixel.hytale:Server:2026.01.22-6f8bdbdc4")
     
     // Common dependencies (will be bundled in JAR)
     implementation("com.google.code.gson:gson:2.10.1")
@@ -44,13 +50,6 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
-
-// Configure server testing
-// runHytale {
-    // TODO: Update this URL when Hytale server is available
-    // Using Paper server as placeholder for testing the runServer functionality
-    // jarUrl = "https://fill-data.papermc.io/v1/objects/d5f47f6393aa647759f101f02231fa8200e5bccd36081a3ee8b6a5fd96739057/paper-1.21.10-115.jar"
-// }
 
 tasks {
     // Configure Java compilation
