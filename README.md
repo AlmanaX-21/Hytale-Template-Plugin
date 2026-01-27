@@ -3,7 +3,7 @@
 ![Java Version](https://img.shields.io/badge/Java-21-orange)
 ![Gradle](https://img.shields.io/badge/Gradle-8.14-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289da?logo=discord&logoColor=white)](https://discord.gg/qm6rvYEXkX)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289da?logo=discord&logoColor=white)](https://discord.hytale-mods.info/)
 [![Documentation](https://img.shields.io/badge/Docs-Modding%20Documentation-blue?logo=read-the-docs&logoColor=white)](https://almanax-21.github.io/Hytale-documentation.github.io/)
 
 A clean, modern template for creating **Hytale Server Plugins** using **Java 21** and **Gradle (Kotlin DSL)**.  
@@ -30,7 +30,7 @@ Designed to get you up and running in seconds with pre-configured build tasks, s
 
 1.  **Clone or Download** this repository.
     ```bash
-    git clone https://github.com/yourusername/BasicHytalePlugin.git
+    https://github.com/AlmanaX-21/Hytale-Template-Plugin.git
     ```
 2.  Open the project in your preferred IDE (IntelliJ IDEA or VS Code recommended).
 
